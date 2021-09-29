@@ -71,6 +71,8 @@ const ourDepartments = combineReducers({
 
 const store = createStore(ourDepartments);
 
+//Technically you can call these actions without store.dispatch but they will
+//not update the data in the redux store.
 createPolicy("Alex", 20);
 createClaim("Alex", 120);
 deletePolicy("Alex");
